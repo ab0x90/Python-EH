@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """
 Program to send out two packets intended for a target and a gateway.
-This is intended to change the mac addresses in the ARP tables to route traffic through the machine running the script
+This is intended to change the mac addresses in the ARP tables to route traffic through the host
 IP forwarding must be enabled
 """
 
